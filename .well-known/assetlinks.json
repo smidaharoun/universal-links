@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.voluntis.customschema",
+    "sha256_cert_fingerprints":
+    ["AC:DB:B6:79:C6:B5:5E:04:69:B3:EA:03:7C:50:D3:35:B7:2C:CE:96:F2:82:04:2C:FF:73:1E:59:13:F1:48:59"]
+  }
+}]

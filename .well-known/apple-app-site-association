@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "apps": [
+      "8VD4ZRCYV8.com.voluntis.redwingCA"
+    ],
+    "details": [
+    {
+      "appID": "8VD4ZRCYV8.com.voluntis.redwingCA",
+      "paths": ["*"]
+    }
+    ]
+  }
+}
