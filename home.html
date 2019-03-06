@@ -308,7 +308,23 @@ sup {
 <p><a href="https://universal-link-ios-test.herokuapp.com/login.php?email=email@email.com&password=testpassword">Click here to login</a> </p>
 
 <script type="text/javascript">
-  window.location = 'https://itunes.apple.com/fr/app/id1300090252'
+  function getMobileOperatingSystem() {
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) ) {
+      return 'iOS';
+    } else if( userAgent.match( /Android/i ) ) {
+      return 'Android';
+    } else {
+      return 'unknown'; 
+    }
+  }
+  if (getMobileOperatingSystem().match('Android')) {
+    window.location = 'https://play.google.com/store/apps/details?id=insulia.diabetes.us&hl=en'
+  } else if (getMobileOperatingSystem().match('iOS')) {
+    window.location = 'https://itunes.apple.com/fr/app/id1300090252'
+  } else {
+    window.location = 'http://insulia.com/'
+  }
 </script>
 
 
